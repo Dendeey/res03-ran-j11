@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Intégration et Validation de Formulaire</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Work+Sans:ital,wght@0,200;0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style-maquette-normale.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Completez votre profil</h1>
+        </header>
+        <main>
+            <section class="active">
+                <header>
+                    <h2>Informations de Connexion</h2>
+                </header>
+                <main>
+                    <form>
+                        <fieldset>
+                            <label for="username">Nom d'utilisateur <span>*</span></label>
+                            <input type="text" name="username" id="username"/><br>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">Mot de passe <span>*</span></label>
+                            <input type="password" name="password" id="password"/>
+                        </fieldset>
+                        <fieldset>
+                            <label for="confirm-password">Confirmer le mot de passe <span>*</span></label>
+                            <input type="password" name="confirm-password" id="confirm-password"/>
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="Enregistrer" />
+                        </fieldset>
+                    </form>
+                    <button>ENREGISTRER</button>
+                </main>
+            </section>
+            <section >
+                <header>
+                    <h2>Profil Professionnel</h2>
+                </header>
+                <main>
+                    <h3>Niveau d'études <span>*</span></h3>
+                    <form>
+                        <div>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-bep" value="studies-bep"/>
+                                <label for="studies-bep">CAP - BEP</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-bac" value="studies-bac"/>
+                                <label for="studies-bac">Bac</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-2" value="studies-2"/>
+                                <label for="studies-2">Bac + 2</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-3" value="studies-3"/>
+                                <label for="studies-3">Bac + 3</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-5" value="studies-5"/>
+                                <label for="studies-5">Bac + 5</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="studies" id="studies-7" value="studies-7"/>
+                                <label for="studies-7">Bac + 7</label>
+                            </fieldset>
+                        </div>
+                        <h3>Profil de développeur <span>*</span></h3>
+                        <div>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-web-back" value="dev-web-back"/>
+                                <label for="dev-web-back">Dev Web Backend</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-web-front" value="dev-web-front"/>
+                                <label for="dev-web-front">Dev Web Frontend</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-web-full" value="dev-web-full"/>
+                                <label for="dev-web-full">Dev Web Fullstack</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-game" value="dev-game"/>
+                                <label for="dev-game">Dev Jeux Vidéo</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-software" value="dev-software"/>
+                                <label for="dev-software">Dev Logiciel</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" name="dev" id="dev-mobile" value="dev-mobile"/>
+                                <label for="dev-mobile">Dev Mobile</label>
+                            </fieldset>
+                        </div>
+                        <fieldset>
+                            <input type="submit" value="Enregistrer" />
+                        </fieldset>
+                    </form>
+                    <button>ENREGISTRER</button>
+                </main>
+            </section>
+            <section>
+                <header>
+                    <h2>Centres d'intérêt</h2>
+                </header>
+                <main>
+                    <form>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-bank" value="interest-bank" />
+                            <label for="interest-bank">Banque</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-com" value="interest-com" />
+                            <label for="interest-com">Communication</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-pub" value="interest-pub" />
+                            <label for="interest-pub">Publicité</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-def" value="interest-def" />
+                            <label for="interest-def">Défense</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-fin" value="interest-fin" />
+                            <label for="interest-fin">Finance</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-ed" value="interest-ed" />
+                            <label for="interest-ed">Éducation</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-med" value="interest-med" />
+                            <label for="interest-med">Santé</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="interest" id="interest-pol" value="interest-pol" />
+                            <label for="interest-pol">Politique</label>
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="Enregistrer" />
+                        </fieldset>
+                    </form>
+                    <button>ENREGISTRER</button>
+                </main>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="maquette-normale.js"></script>
+    </body>
+</html>
